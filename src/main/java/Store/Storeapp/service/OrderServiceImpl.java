@@ -1,25 +1,25 @@
 package Store.Storeapp.service;
 
-import Store.Storeapp.model.Busket;
+import Store.Storeapp.model.Basket;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class OrderServiceImpl implements OrderService {
-    private final Busket busket;
+    private final Basket basket;
 
-    public OrderServiceImpl(Busket busket) {
-        this.busket = busket;
+    public OrderServiceImpl(Basket busket) {
+        this.basket = busket;
     }
 
     @Override
     public List<Integer> addItems(List<Integer> ids) {
-        return busket.addItems(ids);
+        return basket.addItems(ids);
     }
 
     @Override
     public List<Integer> getItems() {
-        return busket.getItems();
+        return basket.getItems();
     }
 }
