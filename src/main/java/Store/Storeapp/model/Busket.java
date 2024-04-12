@@ -8,7 +8,7 @@ import java.util.List;
 
 @Component
 @SessionScope
-public class Basket {
+public class Busket {
     private final List<Integer> items= new ArrayList<>();
 
     public List<Integer> addItems (List<Integer> ids){
